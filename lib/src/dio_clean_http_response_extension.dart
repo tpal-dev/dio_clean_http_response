@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_clean_http_response/dio_clean_http_response.dart';
-import 'package:dio_clean_http_response/src/core/error_handler.dart';
+import 'package:dio_clean_http_response/src/utils/error_handler.dart';
 
 /// An extension on `Future<Response>` providing methods for handling Dio HTTP responses and converting them
 /// into [Either<HttpFailure, TModel>] or [Either<HttpFailure, List<TModel>] types.
