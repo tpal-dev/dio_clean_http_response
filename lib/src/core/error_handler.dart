@@ -2,11 +2,28 @@ import 'dart:io';
 
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:dio_clean_http_response/src/core/http_failure.dart';
+import 'package:dio_clean_http_response/dio_clean_http_response.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+/// @internal
+/// The `ErrorHandler` class provides utility methods for handling Dio HTTP responses and converting them
+/// into [HttpFailure] or [Response] types.
 @internal
 class ErrorHandler {
+  /// Converts a Dio HTTP response into an [Either<HttpFailure, Response>] type.
+  /// Handles different types of exceptions, such as [SocketException] and [DioException],
+  /// and maps them to corresponding [HttpFailure] instances.
+  ///
+  /// Usage:
+  /// ```dart
+  /// final dioResponse = Dio().get('https://example.com');
+  /// final result = await ErrorHandler.dioHttpResponse(dioResponse);
+  ///
+  /// result.fold(
+  ///   (failure) => print('HTTP Failure: $failure'),
+  ///   (response) => print('HTTP Response: $response'),
+  /// );
+  /// ```
   static Future<Either<HttpFailure, Response>> dioHttpResponse(Future<Response> dioHttpResponse) async {
     try {
       return Right(await dioHttpResponse);
@@ -19,6 +36,7 @@ class ErrorHandler {
     }
   }
 
+  /// Handles a [DioException] and maps it to a specific [HttpFailure] instance based on the exception type.
   static HttpFailure _handleDioException(DioException error, StackTrace stackTrace) {
     switch (error.type) {
       case DioExceptionType.connectionTimeout:
@@ -37,9 +55,12 @@ class ErrorHandler {
         return HttpFailure.receiveTimeout(error, stackTrace);
       case DioExceptionType.unknown:
         return HttpFailure.unknown(error, stackTrace);
+      default:
+        return HttpFailure.unknown(error, stackTrace);
     }
   }
 
+  /// Handles a [DioExceptionType.badResponse] and maps it to a specific [HttpFailure] instance based on the HTTP status code.
   static HttpFailure _handleBadResponseException(DioException error, StackTrace stackTrace) {
     final statusCode = error.response?.statusCode;
     if (statusCode == null) {

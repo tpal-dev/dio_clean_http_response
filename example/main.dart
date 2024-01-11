@@ -34,19 +34,17 @@ void main() async {
     ),
   );
 
-  // Either<HttpFailure, PostModel>
   final postModelOrFailure = await httpClient.get('/posts/1').fromJson(PostModel.fromJson);
 
-  print(postModelOrFailure.fold(
-    (failure) => failure.message(),
-    (postModel) => postModel,
-  ));
+  postModelOrFailure.fold(
+    (failure) => print(failure.message()),
+    (postModel) => print(postModel),
+  );
 
-  // Either<HttpFailure, List<PostModel>>
   final postModelsListOrFailure = await httpClient.get('/posts').fromJsonAsList(PostModel.fromJson);
 
-  print(postModelsListOrFailure.fold(
-    (failure) => failure.message(),
-    (postModel) => postModel,
-  ));
+  postModelsListOrFailure.fold(
+    (failure) => print(failure.message()),
+    (postModelsList) => print(postModelsList),
+  );
 }
