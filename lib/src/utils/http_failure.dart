@@ -76,7 +76,7 @@ class HttpFailure with _$HttpFailure {
   /// final HttpFailuresLocalization myLocalization = MyHttpFailuresLocalization();
   /// // Assuming an instance of HttpFailure is created as httpFailure
   /// httpFailure.message(
-  ///   showLog: false, // Do not log the error message
+  ///   showLog: true, // Log the error message
   ///   localization: myLocalization, // Use custom localization
   /// );
   /// ```
@@ -84,7 +84,7 @@ class HttpFailure with _$HttpFailure {
   /// Note: Ensure to replace `MyHttpFailuresLocalization` with your custom implementation.
 
   String message({
-    bool showLog = true, // Flag to determine whether to show logs or not. Default is true.
+    bool showLog = false, // Flag to determine whether to show logs or not. Default is false.
     HttpFailuresLocalization localization = const HttpFailuresLocalizationDefaultImpl(),
   }) {
     // If showLog is true, log the localized error message along with additional information.

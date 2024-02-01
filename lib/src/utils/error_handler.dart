@@ -67,9 +67,9 @@ class ErrorHandler {
       return HttpFailure.unknown(error, stackTrace);
     } else if (statusCode >= 100 && statusCode <= 199) {
       return HttpFailure.informationalResponse(error, stackTrace);
-    } else if (statusCode >= 300) {
+    } else if (statusCode >= 300 && statusCode <= 399) {
       return HttpFailure.redirectionMessage(error, stackTrace, statusCode);
-    } else if (statusCode >= 400) {
+    } else if (statusCode >= 400 && statusCode <= 499) {
       return HttpFailure.clientError(error, stackTrace, statusCode);
     } else if (statusCode >= 500 && statusCode <= 599) {
       return HttpFailure.serverError(error, stackTrace, statusCode);
