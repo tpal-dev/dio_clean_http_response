@@ -34,10 +34,18 @@ void main() async {
     ),
   );
 
-  final postModelOrFailure = await httpClient.get('/posts/1').fromJson(PostModel.fromJson);
+  final dioResponse = Response<Map<String, dynamic>>(
+    data: {},
+    statusCode: 500,
+    requestOptions: RequestOptions(baseUrl: 'https://jsonplaceholder.typicode.com'),
+  );
+
+  final postModelOrFailure = await Future.value(dioResponse).fromJson(PostModel.fromJson);
 
   postModelOrFailure.fold(
-    (failure) => print(failure.message()),
+    (failure) {
+      print(failure.message(showLog: false));
+    },
     (postModel) => print(postModel),
   );
 

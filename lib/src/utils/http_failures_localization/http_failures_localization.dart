@@ -1,6 +1,6 @@
 /// Abstract class defining a contract for providing localized error messages
 /// for different HTTP failure scenarios. Implementations should define
-/// methods to retrieve localized error messages for each scenario.
+/// getters to retrieve localized error messages for each scenario.
 ///
 abstract class HttpFailuresLocalization {
   /// Gets the localized error message for a connection timeout scenario.

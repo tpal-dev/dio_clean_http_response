@@ -122,57 +122,57 @@ mixin _$HttpFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -216,22 +216,22 @@ class _$HttpFailureCopyWithImpl<$Res, $Val extends HttpFailure>
 }
 
 /// @nodoc
-abstract class _$$ConnectTimeoutImplCopyWith<$Res>
+abstract class _$$ConnectionTimeoutImplCopyWith<$Res>
     implements $HttpFailureCopyWith<$Res> {
-  factory _$$ConnectTimeoutImplCopyWith(_$ConnectTimeoutImpl value,
-          $Res Function(_$ConnectTimeoutImpl) then) =
-      __$$ConnectTimeoutImplCopyWithImpl<$Res>;
+  factory _$$ConnectionTimeoutImplCopyWith(_$ConnectionTimeoutImpl value,
+          $Res Function(_$ConnectionTimeoutImpl) then) =
+      __$$ConnectionTimeoutImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({DioException? error, StackTrace? stackTrace});
 }
 
 /// @nodoc
-class __$$ConnectTimeoutImplCopyWithImpl<$Res>
-    extends _$HttpFailureCopyWithImpl<$Res, _$ConnectTimeoutImpl>
-    implements _$$ConnectTimeoutImplCopyWith<$Res> {
-  __$$ConnectTimeoutImplCopyWithImpl(
-      _$ConnectTimeoutImpl _value, $Res Function(_$ConnectTimeoutImpl) _then)
+class __$$ConnectionTimeoutImplCopyWithImpl<$Res>
+    extends _$HttpFailureCopyWithImpl<$Res, _$ConnectionTimeoutImpl>
+    implements _$$ConnectionTimeoutImplCopyWith<$Res> {
+  __$$ConnectionTimeoutImplCopyWithImpl(_$ConnectionTimeoutImpl _value,
+      $Res Function(_$ConnectionTimeoutImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -240,7 +240,7 @@ class __$$ConnectTimeoutImplCopyWithImpl<$Res>
     Object? error = freezed,
     Object? stackTrace = freezed,
   }) {
-    return _then(_$ConnectTimeoutImpl(
+    return _then(_$ConnectionTimeoutImpl(
       freezed == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -255,8 +255,8 @@ class __$$ConnectTimeoutImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ConnectTimeoutImpl extends _ConnectTimeout {
-  const _$ConnectTimeoutImpl([this.error, this.stackTrace]) : super._();
+class _$ConnectionTimeoutImpl extends ConnectionTimeout {
+  const _$ConnectionTimeoutImpl([this.error, this.stackTrace]) : super._();
 
   @override
   final DioException? error;
@@ -272,7 +272,7 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ConnectTimeoutImpl &&
+            other is _$ConnectionTimeoutImpl &&
             (identical(other.error, error) || other.error == error) &&
             (identical(other.stackTrace, stackTrace) ||
                 other.stackTrace == stackTrace));
@@ -284,8 +284,8 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ConnectTimeoutImplCopyWith<_$ConnectTimeoutImpl> get copyWith =>
-      __$$ConnectTimeoutImplCopyWithImpl<_$ConnectTimeoutImpl>(
+  _$$ConnectionTimeoutImplCopyWith<_$ConnectionTimeoutImpl> get copyWith =>
+      __$$ConnectionTimeoutImplCopyWithImpl<_$ConnectionTimeoutImpl>(
           this, _$identity);
 
   @override
@@ -405,21 +405,21 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return connectionTimeout(this);
   }
@@ -427,20 +427,20 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return connectionTimeout?.call(this);
   }
@@ -448,20 +448,20 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (connectionTimeout != null) {
@@ -471,11 +471,11 @@ class _$ConnectTimeoutImpl extends _ConnectTimeout {
   }
 }
 
-abstract class _ConnectTimeout extends HttpFailure {
-  const factory _ConnectTimeout(
+abstract class ConnectionTimeout extends HttpFailure {
+  const factory ConnectionTimeout(
       [final DioException? error,
-      final StackTrace? stackTrace]) = _$ConnectTimeoutImpl;
-  const _ConnectTimeout._() : super._();
+      final StackTrace? stackTrace]) = _$ConnectionTimeoutImpl;
+  const ConnectionTimeout._() : super._();
 
   @override
   DioException? get error;
@@ -483,7 +483,7 @@ abstract class _ConnectTimeout extends HttpFailure {
   StackTrace? get stackTrace;
   @override
   @JsonKey(ignore: true)
-  _$$ConnectTimeoutImplCopyWith<_$ConnectTimeoutImpl> get copyWith =>
+  _$$ConnectionTimeoutImplCopyWith<_$ConnectionTimeoutImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -527,7 +527,7 @@ class __$$SendTimeoutImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SendTimeoutImpl extends _SendTimeout {
+class _$SendTimeoutImpl extends SendTimeout {
   const _$SendTimeoutImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -676,21 +676,21 @@ class _$SendTimeoutImpl extends _SendTimeout {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return sendTimeout(this);
   }
@@ -698,20 +698,20 @@ class _$SendTimeoutImpl extends _SendTimeout {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return sendTimeout?.call(this);
   }
@@ -719,20 +719,20 @@ class _$SendTimeoutImpl extends _SendTimeout {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (sendTimeout != null) {
@@ -742,11 +742,11 @@ class _$SendTimeoutImpl extends _SendTimeout {
   }
 }
 
-abstract class _SendTimeout extends HttpFailure {
-  const factory _SendTimeout(
+abstract class SendTimeout extends HttpFailure {
+  const factory SendTimeout(
       [final DioException? error,
       final StackTrace? stackTrace]) = _$SendTimeoutImpl;
-  const _SendTimeout._() : super._();
+  const SendTimeout._() : super._();
 
   @override
   DioException? get error;
@@ -798,7 +798,7 @@ class __$$ReceiveTimeoutImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReceiveTimeoutImpl extends _ReceiveTimeout {
+class _$ReceiveTimeoutImpl extends ReceiveTimeout {
   const _$ReceiveTimeoutImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -948,21 +948,21 @@ class _$ReceiveTimeoutImpl extends _ReceiveTimeout {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return receiveTimeout(this);
   }
@@ -970,20 +970,20 @@ class _$ReceiveTimeoutImpl extends _ReceiveTimeout {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return receiveTimeout?.call(this);
   }
@@ -991,20 +991,20 @@ class _$ReceiveTimeoutImpl extends _ReceiveTimeout {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (receiveTimeout != null) {
@@ -1014,11 +1014,11 @@ class _$ReceiveTimeoutImpl extends _ReceiveTimeout {
   }
 }
 
-abstract class _ReceiveTimeout extends HttpFailure {
-  const factory _ReceiveTimeout(
+abstract class ReceiveTimeout extends HttpFailure {
+  const factory ReceiveTimeout(
       [final DioException? error,
       final StackTrace? stackTrace]) = _$ReceiveTimeoutImpl;
-  const _ReceiveTimeout._() : super._();
+  const ReceiveTimeout._() : super._();
 
   @override
   DioException? get error;
@@ -1070,7 +1070,7 @@ class __$$RequestCancelledImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$RequestCancelledImpl extends _RequestCancelled {
+class _$RequestCancelledImpl extends RequestCancelled {
   const _$RequestCancelledImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -1220,21 +1220,21 @@ class _$RequestCancelledImpl extends _RequestCancelled {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return requestCancel(this);
   }
@@ -1242,20 +1242,20 @@ class _$RequestCancelledImpl extends _RequestCancelled {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return requestCancel?.call(this);
   }
@@ -1263,20 +1263,20 @@ class _$RequestCancelledImpl extends _RequestCancelled {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (requestCancel != null) {
@@ -1286,11 +1286,11 @@ class _$RequestCancelledImpl extends _RequestCancelled {
   }
 }
 
-abstract class _RequestCancelled extends HttpFailure {
-  const factory _RequestCancelled(
+abstract class RequestCancelled extends HttpFailure {
+  const factory RequestCancelled(
       [final DioException? error,
       final StackTrace? stackTrace]) = _$RequestCancelledImpl;
-  const _RequestCancelled._() : super._();
+  const RequestCancelled._() : super._();
 
   @override
   DioException? get error;
@@ -1342,7 +1342,7 @@ class __$$NoInternetConnectionImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$NoInternetConnectionImpl extends _NoInternetConnection {
+class _$NoInternetConnectionImpl extends NoInternetConnection {
   const _$NoInternetConnectionImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -1493,21 +1493,21 @@ class _$NoInternetConnectionImpl extends _NoInternetConnection {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return noInternetConnection(this);
   }
@@ -1515,20 +1515,20 @@ class _$NoInternetConnectionImpl extends _NoInternetConnection {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return noInternetConnection?.call(this);
   }
@@ -1536,20 +1536,20 @@ class _$NoInternetConnectionImpl extends _NoInternetConnection {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (noInternetConnection != null) {
@@ -1559,11 +1559,11 @@ class _$NoInternetConnectionImpl extends _NoInternetConnection {
   }
 }
 
-abstract class _NoInternetConnection extends HttpFailure {
-  const factory _NoInternetConnection(
+abstract class NoInternetConnection extends HttpFailure {
+  const factory NoInternetConnection(
       [final SocketException? error,
       final StackTrace? stackTrace]) = _$NoInternetConnectionImpl;
-  const _NoInternetConnection._() : super._();
+  const NoInternetConnection._() : super._();
 
   @override
   SocketException? get error;
@@ -1612,7 +1612,7 @@ class __$$UnableToProcessDataImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnableToProcessDataImpl extends _UnableToProcessData {
+class _$UnableToProcessDataImpl extends UnableToProcessData {
   const _$UnableToProcessDataImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -1763,21 +1763,21 @@ class _$UnableToProcessDataImpl extends _UnableToProcessData {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return unableToProcessData(this);
   }
@@ -1785,20 +1785,20 @@ class _$UnableToProcessDataImpl extends _UnableToProcessData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return unableToProcessData?.call(this);
   }
@@ -1806,20 +1806,20 @@ class _$UnableToProcessDataImpl extends _UnableToProcessData {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (unableToProcessData != null) {
@@ -1829,11 +1829,11 @@ class _$UnableToProcessDataImpl extends _UnableToProcessData {
   }
 }
 
-abstract class _UnableToProcessData extends HttpFailure {
-  const factory _UnableToProcessData(
+abstract class UnableToProcessData extends HttpFailure {
+  const factory UnableToProcessData(
       [final Object? error,
       final StackTrace? stackTrace]) = _$UnableToProcessDataImpl;
-  const _UnableToProcessData._() : super._();
+  const UnableToProcessData._() : super._();
 
   @override
   Object? get error;
@@ -1882,7 +1882,7 @@ class __$$UnexpectedErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnexpectedErrorImpl extends _UnexpectedError {
+class _$UnexpectedErrorImpl extends UnexpectedError {
   const _$UnexpectedErrorImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -2033,21 +2033,21 @@ class _$UnexpectedErrorImpl extends _UnexpectedError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return unexpectedError(this);
   }
@@ -2055,20 +2055,20 @@ class _$UnexpectedErrorImpl extends _UnexpectedError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return unexpectedError?.call(this);
   }
@@ -2076,20 +2076,20 @@ class _$UnexpectedErrorImpl extends _UnexpectedError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (unexpectedError != null) {
@@ -2099,11 +2099,11 @@ class _$UnexpectedErrorImpl extends _UnexpectedError {
   }
 }
 
-abstract class _UnexpectedError extends HttpFailure {
-  const factory _UnexpectedError(
+abstract class UnexpectedError extends HttpFailure {
+  const factory UnexpectedError(
       [final Object? error,
       final StackTrace? stackTrace]) = _$UnexpectedErrorImpl;
-  const _UnexpectedError._() : super._();
+  const UnexpectedError._() : super._();
 
   @override
   Object? get error;
@@ -2161,7 +2161,7 @@ class __$$InformationalResponseImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$InformationalResponseImpl extends _InformationalResponse {
+class _$InformationalResponseImpl extends InformationalResponse {
   const _$InformationalResponseImpl(
       [this.error, this.stackTrace, this.statusCode])
       : super._();
@@ -2317,21 +2317,21 @@ class _$InformationalResponseImpl extends _InformationalResponse {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return informationalResponse(this);
   }
@@ -2339,20 +2339,20 @@ class _$InformationalResponseImpl extends _InformationalResponse {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return informationalResponse?.call(this);
   }
@@ -2360,20 +2360,20 @@ class _$InformationalResponseImpl extends _InformationalResponse {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (informationalResponse != null) {
@@ -2383,12 +2383,12 @@ class _$InformationalResponseImpl extends _InformationalResponse {
   }
 }
 
-abstract class _InformationalResponse extends HttpFailure {
-  const factory _InformationalResponse(
+abstract class InformationalResponse extends HttpFailure {
+  const factory InformationalResponse(
       [final DioException? error,
       final StackTrace? stackTrace,
       final int? statusCode]) = _$InformationalResponseImpl;
-  const _InformationalResponse._() : super._();
+  const InformationalResponse._() : super._();
 
   @override
   DioException? get error;
@@ -2446,7 +2446,7 @@ class __$$RedirectionMessageImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$RedirectionMessageImpl extends _RedirectionMessage {
+class _$RedirectionMessageImpl extends RedirectionMessage {
   const _$RedirectionMessageImpl([this.error, this.stackTrace, this.statusCode])
       : super._();
 
@@ -2601,21 +2601,21 @@ class _$RedirectionMessageImpl extends _RedirectionMessage {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return redirectionMessage(this);
   }
@@ -2623,20 +2623,20 @@ class _$RedirectionMessageImpl extends _RedirectionMessage {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return redirectionMessage?.call(this);
   }
@@ -2644,20 +2644,20 @@ class _$RedirectionMessageImpl extends _RedirectionMessage {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (redirectionMessage != null) {
@@ -2667,12 +2667,12 @@ class _$RedirectionMessageImpl extends _RedirectionMessage {
   }
 }
 
-abstract class _RedirectionMessage extends HttpFailure {
-  const factory _RedirectionMessage(
+abstract class RedirectionMessage extends HttpFailure {
+  const factory RedirectionMessage(
       [final DioException? error,
       final StackTrace? stackTrace,
       final int? statusCode]) = _$RedirectionMessageImpl;
-  const _RedirectionMessage._() : super._();
+  const RedirectionMessage._() : super._();
 
   @override
   DioException? get error;
@@ -2730,7 +2730,7 @@ class __$$ClientErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ClientErrorImpl extends _ClientError {
+class _$ClientErrorImpl extends ClientError {
   const _$ClientErrorImpl([this.error, this.stackTrace, this.statusCode])
       : super._();
 
@@ -2884,21 +2884,21 @@ class _$ClientErrorImpl extends _ClientError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return clientError(this);
   }
@@ -2906,20 +2906,20 @@ class _$ClientErrorImpl extends _ClientError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return clientError?.call(this);
   }
@@ -2927,20 +2927,20 @@ class _$ClientErrorImpl extends _ClientError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (clientError != null) {
@@ -2950,12 +2950,12 @@ class _$ClientErrorImpl extends _ClientError {
   }
 }
 
-abstract class _ClientError extends HttpFailure {
-  const factory _ClientError(
+abstract class ClientError extends HttpFailure {
+  const factory ClientError(
       [final DioException? error,
       final StackTrace? stackTrace,
       final int? statusCode]) = _$ClientErrorImpl;
-  const _ClientError._() : super._();
+  const ClientError._() : super._();
 
   @override
   DioException? get error;
@@ -3013,7 +3013,7 @@ class __$$ServerErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ServerErrorImpl extends _ServerError {
+class _$ServerErrorImpl extends ServerError {
   const _$ServerErrorImpl([this.error, this.stackTrace, this.statusCode])
       : super._();
 
@@ -3167,21 +3167,21 @@ class _$ServerErrorImpl extends _ServerError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return serverError(this);
   }
@@ -3189,20 +3189,20 @@ class _$ServerErrorImpl extends _ServerError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return serverError?.call(this);
   }
@@ -3210,20 +3210,20 @@ class _$ServerErrorImpl extends _ServerError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -3233,12 +3233,12 @@ class _$ServerErrorImpl extends _ServerError {
   }
 }
 
-abstract class _ServerError extends HttpFailure {
-  const factory _ServerError(
+abstract class ServerError extends HttpFailure {
+  const factory ServerError(
       [final DioException? error,
       final StackTrace? stackTrace,
       final int? statusCode]) = _$ServerErrorImpl;
-  const _ServerError._() : super._();
+  const ServerError._() : super._();
 
   @override
   DioException? get error;
@@ -3291,7 +3291,7 @@ class __$$BadCertificateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$BadCertificateImpl extends _BadCertificate {
+class _$BadCertificateImpl extends BadCertificate {
   const _$BadCertificateImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -3441,21 +3441,21 @@ class _$BadCertificateImpl extends _BadCertificate {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return badCertificate(this);
   }
@@ -3463,20 +3463,20 @@ class _$BadCertificateImpl extends _BadCertificate {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return badCertificate?.call(this);
   }
@@ -3484,20 +3484,20 @@ class _$BadCertificateImpl extends _BadCertificate {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (badCertificate != null) {
@@ -3507,11 +3507,11 @@ class _$BadCertificateImpl extends _BadCertificate {
   }
 }
 
-abstract class _BadCertificate extends HttpFailure {
-  const factory _BadCertificate(
+abstract class BadCertificate extends HttpFailure {
+  const factory BadCertificate(
       [final DioException? error,
       final StackTrace? stackTrace]) = _$BadCertificateImpl;
-  const _BadCertificate._() : super._();
+  const BadCertificate._() : super._();
 
   @override
   DioException? get error;
@@ -3563,7 +3563,7 @@ class __$$ConnectionErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ConnectionErrorImpl extends _ConnectionError {
+class _$ConnectionErrorImpl extends ConnectionError {
   const _$ConnectionErrorImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -3713,21 +3713,21 @@ class _$ConnectionErrorImpl extends _ConnectionError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return connectionError(this);
   }
@@ -3735,20 +3735,20 @@ class _$ConnectionErrorImpl extends _ConnectionError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return connectionError?.call(this);
   }
@@ -3756,20 +3756,20 @@ class _$ConnectionErrorImpl extends _ConnectionError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (connectionError != null) {
@@ -3779,11 +3779,11 @@ class _$ConnectionErrorImpl extends _ConnectionError {
   }
 }
 
-abstract class _ConnectionError extends HttpFailure {
-  const factory _ConnectionError(
+abstract class ConnectionError extends HttpFailure {
+  const factory ConnectionError(
       [final DioException? error,
       final StackTrace? stackTrace]) = _$ConnectionErrorImpl;
-  const _ConnectionError._() : super._();
+  const ConnectionError._() : super._();
 
   @override
   DioException? get error;
@@ -3832,7 +3832,7 @@ class __$$UnknownExceptionImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UnknownExceptionImpl extends _UnknownException {
+class _$UnknownExceptionImpl extends UnknownException {
   const _$UnknownExceptionImpl([this.error, this.stackTrace]) : super._();
 
   @override
@@ -3983,21 +3983,21 @@ class _$UnknownExceptionImpl extends _UnknownException {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_ConnectTimeout value) connectionTimeout,
-    required TResult Function(_SendTimeout value) sendTimeout,
-    required TResult Function(_ReceiveTimeout value) receiveTimeout,
-    required TResult Function(_RequestCancelled value) requestCancel,
-    required TResult Function(_NoInternetConnection value) noInternetConnection,
-    required TResult Function(_UnableToProcessData value) unableToProcessData,
-    required TResult Function(_UnexpectedError value) unexpectedError,
-    required TResult Function(_InformationalResponse value)
+    required TResult Function(ConnectionTimeout value) connectionTimeout,
+    required TResult Function(SendTimeout value) sendTimeout,
+    required TResult Function(ReceiveTimeout value) receiveTimeout,
+    required TResult Function(RequestCancelled value) requestCancel,
+    required TResult Function(NoInternetConnection value) noInternetConnection,
+    required TResult Function(UnableToProcessData value) unableToProcessData,
+    required TResult Function(UnexpectedError value) unexpectedError,
+    required TResult Function(InformationalResponse value)
         informationalResponse,
-    required TResult Function(_RedirectionMessage value) redirectionMessage,
-    required TResult Function(_ClientError value) clientError,
-    required TResult Function(_ServerError value) serverError,
-    required TResult Function(_BadCertificate value) badCertificate,
-    required TResult Function(_ConnectionError value) connectionError,
-    required TResult Function(_UnknownException value) unknown,
+    required TResult Function(RedirectionMessage value) redirectionMessage,
+    required TResult Function(ClientError value) clientError,
+    required TResult Function(ServerError value) serverError,
+    required TResult Function(BadCertificate value) badCertificate,
+    required TResult Function(ConnectionError value) connectionError,
+    required TResult Function(UnknownException value) unknown,
   }) {
     return unknown(this);
   }
@@ -4005,20 +4005,20 @@ class _$UnknownExceptionImpl extends _UnknownException {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ConnectTimeout value)? connectionTimeout,
-    TResult? Function(_SendTimeout value)? sendTimeout,
-    TResult? Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult? Function(_RequestCancelled value)? requestCancel,
-    TResult? Function(_NoInternetConnection value)? noInternetConnection,
-    TResult? Function(_UnableToProcessData value)? unableToProcessData,
-    TResult? Function(_UnexpectedError value)? unexpectedError,
-    TResult? Function(_InformationalResponse value)? informationalResponse,
-    TResult? Function(_RedirectionMessage value)? redirectionMessage,
-    TResult? Function(_ClientError value)? clientError,
-    TResult? Function(_ServerError value)? serverError,
-    TResult? Function(_BadCertificate value)? badCertificate,
-    TResult? Function(_ConnectionError value)? connectionError,
-    TResult? Function(_UnknownException value)? unknown,
+    TResult? Function(ConnectionTimeout value)? connectionTimeout,
+    TResult? Function(SendTimeout value)? sendTimeout,
+    TResult? Function(ReceiveTimeout value)? receiveTimeout,
+    TResult? Function(RequestCancelled value)? requestCancel,
+    TResult? Function(NoInternetConnection value)? noInternetConnection,
+    TResult? Function(UnableToProcessData value)? unableToProcessData,
+    TResult? Function(UnexpectedError value)? unexpectedError,
+    TResult? Function(InformationalResponse value)? informationalResponse,
+    TResult? Function(RedirectionMessage value)? redirectionMessage,
+    TResult? Function(ClientError value)? clientError,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(BadCertificate value)? badCertificate,
+    TResult? Function(ConnectionError value)? connectionError,
+    TResult? Function(UnknownException value)? unknown,
   }) {
     return unknown?.call(this);
   }
@@ -4026,20 +4026,20 @@ class _$UnknownExceptionImpl extends _UnknownException {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ConnectTimeout value)? connectionTimeout,
-    TResult Function(_SendTimeout value)? sendTimeout,
-    TResult Function(_ReceiveTimeout value)? receiveTimeout,
-    TResult Function(_RequestCancelled value)? requestCancel,
-    TResult Function(_NoInternetConnection value)? noInternetConnection,
-    TResult Function(_UnableToProcessData value)? unableToProcessData,
-    TResult Function(_UnexpectedError value)? unexpectedError,
-    TResult Function(_InformationalResponse value)? informationalResponse,
-    TResult Function(_RedirectionMessage value)? redirectionMessage,
-    TResult Function(_ClientError value)? clientError,
-    TResult Function(_ServerError value)? serverError,
-    TResult Function(_BadCertificate value)? badCertificate,
-    TResult Function(_ConnectionError value)? connectionError,
-    TResult Function(_UnknownException value)? unknown,
+    TResult Function(ConnectionTimeout value)? connectionTimeout,
+    TResult Function(SendTimeout value)? sendTimeout,
+    TResult Function(ReceiveTimeout value)? receiveTimeout,
+    TResult Function(RequestCancelled value)? requestCancel,
+    TResult Function(NoInternetConnection value)? noInternetConnection,
+    TResult Function(UnableToProcessData value)? unableToProcessData,
+    TResult Function(UnexpectedError value)? unexpectedError,
+    TResult Function(InformationalResponse value)? informationalResponse,
+    TResult Function(RedirectionMessage value)? redirectionMessage,
+    TResult Function(ClientError value)? clientError,
+    TResult Function(ServerError value)? serverError,
+    TResult Function(BadCertificate value)? badCertificate,
+    TResult Function(ConnectionError value)? connectionError,
+    TResult Function(UnknownException value)? unknown,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -4049,11 +4049,11 @@ class _$UnknownExceptionImpl extends _UnknownException {
   }
 }
 
-abstract class _UnknownException extends HttpFailure {
-  const factory _UnknownException(
+abstract class UnknownException extends HttpFailure {
+  const factory UnknownException(
       [final Object? error,
       final StackTrace? stackTrace]) = _$UnknownExceptionImpl;
-  const _UnknownException._() : super._();
+  const UnknownException._() : super._();
 
   @override
   Object? get error;

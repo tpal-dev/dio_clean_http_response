@@ -52,7 +52,7 @@ class ErrorHandler {
       case DioExceptionType.badCertificate:
         return HttpFailure.receiveTimeout(error, stackTrace);
       case DioExceptionType.connectionError:
-        return HttpFailure.receiveTimeout(error, stackTrace);
+        return HttpFailure.connectionError(error, stackTrace);
       case DioExceptionType.unknown:
         return HttpFailure.unknown(error, stackTrace);
       default:

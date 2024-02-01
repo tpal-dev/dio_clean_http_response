@@ -16,49 +16,49 @@ class HttpFailure with _$HttpFailure {
   // Factory constructors for different HTTP failure scenarios, each associated with a specific type
 
   /// Represents a connection timeout HTTP failure.
-  const factory HttpFailure.connectionTimeout([DioException? error, StackTrace? stackTrace]) = _ConnectTimeout;
+  const factory HttpFailure.connectionTimeout([DioException? error, StackTrace? stackTrace]) = ConnectionTimeout;
 
   /// Represents a send timeout HTTP failure.
-  const factory HttpFailure.sendTimeout([DioException? error, StackTrace? stackTrace]) = _SendTimeout;
+  const factory HttpFailure.sendTimeout([DioException? error, StackTrace? stackTrace]) = SendTimeout;
 
   /// Represents a receive timeout HTTP failure.
-  const factory HttpFailure.receiveTimeout([DioException? error, StackTrace? stackTrace]) = _ReceiveTimeout;
+  const factory HttpFailure.receiveTimeout([DioException? error, StackTrace? stackTrace]) = ReceiveTimeout;
 
   /// Represents a request cancellation HTTP failure.
-  const factory HttpFailure.requestCancel([DioException? error, StackTrace? stackTrace]) = _RequestCancelled;
+  const factory HttpFailure.requestCancel([DioException? error, StackTrace? stackTrace]) = RequestCancelled;
 
   /// Represents a no internet connection HTTP failure.
   const factory HttpFailure.noInternetConnection([SocketException? error, StackTrace? stackTrace]) =
-      _NoInternetConnection;
+      NoInternetConnection;
 
   /// Represents an unable to process data HTTP failure.
-  const factory HttpFailure.unableToProcessData([Object? error, StackTrace? stackTrace]) = _UnableToProcessData;
+  const factory HttpFailure.unableToProcessData([Object? error, StackTrace? stackTrace]) = UnableToProcessData;
 
   /// Represents an unexpected error HTTP failure.
-  const factory HttpFailure.unexpectedError([Object? error, StackTrace? stackTrace]) = _UnexpectedError;
+  const factory HttpFailure.unexpectedError([Object? error, StackTrace? stackTrace]) = UnexpectedError;
 
   /// Represents an informational response HTTP failure.
   const factory HttpFailure.informationalResponse([DioException? error, StackTrace? stackTrace, int? statusCode]) =
-      _InformationalResponse;
+      InformationalResponse;
 
   /// Represents a redirection message HTTP failure.
   const factory HttpFailure.redirectionMessage([DioException? error, StackTrace? stackTrace, int? statusCode]) =
-      _RedirectionMessage;
+      RedirectionMessage;
 
   /// Represents a client error HTTP failure.
-  const factory HttpFailure.clientError([DioException? error, StackTrace? stackTrace, int? statusCode]) = _ClientError;
+  const factory HttpFailure.clientError([DioException? error, StackTrace? stackTrace, int? statusCode]) = ClientError;
 
   /// Represents a server error HTTP failure.
-  const factory HttpFailure.serverError([DioException? error, StackTrace? stackTrace, int? statusCode]) = _ServerError;
+  const factory HttpFailure.serverError([DioException? error, StackTrace? stackTrace, int? statusCode]) = ServerError;
 
   /// Represents a bad certificate HTTP failure.
-  const factory HttpFailure.badCertificate([DioException? error, StackTrace? stackTrace]) = _BadCertificate;
+  const factory HttpFailure.badCertificate([DioException? error, StackTrace? stackTrace]) = BadCertificate;
 
   /// Represents a connection error HTTP failure.
-  const factory HttpFailure.connectionError([DioException? error, StackTrace? stackTrace]) = _ConnectionError;
+  const factory HttpFailure.connectionError([DioException? error, StackTrace? stackTrace]) = ConnectionError;
 
   /// Represents an unknown HTTP failure.
-  const factory HttpFailure.unknown([Object? error, StackTrace? stackTrace]) = _UnknownException;
+  const factory HttpFailure.unknown([Object? error, StackTrace? stackTrace]) = UnknownException;
 
   /// Method to get a localized error message based on the type of HTTP failure.
   /// If showLog is true, it logs the error message along with additional information.
