@@ -22,17 +22,18 @@ class UserModel {
 
 void main() {
   group('HttpResponseDioExtension', () {
-    final requestOptions = RequestOptions(path: '/data');
+    final requestOptions = RequestOptions(path: '/data', validateStatus: (status) => true);
     final data = {'id': 1, 'name': 'John Doe'};
     final dataList = [
       {'id': 1, 'name': 'John Doe'},
       {'id': 2, 'name': 'Jane Doe'}
     ];
 
-    Future<Never> futureDioException(DioExceptionType type) {
+    Future<Never> futureDioException(DioExceptionType type, {Response? response}) {
       return Future.delayed(
         Duration(microseconds: 10),
         () => throw DioException(
+          response: response,
           requestOptions: requestOptions,
           type: type,
         ),
@@ -139,22 +140,75 @@ void main() {
         expect(result, isA<Left<HttpFailure, UserModel>>());
         expect(result.fold(id, id), isA<UnknownException>());
       });
-    });
 
-    test(
-        'should return Left<HttpFailure.unableToProcessData> on status code 500 when ValidateStatus callback is not defined',
-        () async {
-      // Arrange
-      final dioResponse = Response<Map<String, dynamic>>(
-        data: null,
-        statusCode: 500,
-        requestOptions: requestOptions,
-      );
-      // Act
-      final result = await Future.value(dioResponse).fromJson(UserModel.fromJson);
-      // Assert
-      expect(result, isA<Left<HttpFailure, UserModel>>());
-      expect(result.fold(id, id), isA<UnableToProcessData>());
+      test('should return Left<HttpFailure.unknown> on DioExceptionType.badResponse with status code null  ', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != null),
+              statusCode: null,
+            ));
+        // Act
+        final result = await dioResponse.fromJson(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, UserModel>>());
+        expect(result.fold(id, id), isA<UnknownException>());
+      });
+
+      test('should return Left<HttpFailure.informationalResponse> on status code 100', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 100),
+              statusCode: 100,
+            ));
+        // Act
+        final result = await dioResponse.fromJson(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, UserModel>>());
+        expect(result.fold(id, id), isA<InformationalResponse>());
+      });
+
+      test('should return Left<HttpFailure.redirectionMessage> on status code 300', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 300),
+              statusCode: 300,
+            ));
+        // Act
+        final result = await dioResponse.fromJson(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, UserModel>>());
+        expect(result.fold(id, id), isA<RedirectionMessage>());
+      });
+      test('should return Left<HttpFailure.clientError> on status code 400', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 400),
+              statusCode: 400,
+            ));
+        // Act
+        final result = await dioResponse.fromJson(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, UserModel>>());
+        expect(result.fold(id, id), isA<ClientError>());
+      });
+
+      test('should return Left<HttpFailure.serverError> on status code 500', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 500),
+              statusCode: 500,
+            ));
+        // Act
+        final result = await dioResponse.fromJson(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, UserModel>>());
+        expect(result.fold(id, id), isA<ServerError>());
+      });
     });
 
     group('fromJsonAsList', () {
@@ -197,13 +251,7 @@ void main() {
 
       test('should return Left<HttpFailure.connectionTimeout> on DioExceptionType.connectionTimeout', () async {
         // Arrange
-        final dioResponse = Future.delayed(
-          Duration(seconds: 2),
-          () => throw DioException(
-            requestOptions: requestOptions,
-            type: DioExceptionType.connectionTimeout,
-          ),
-        );
+        final dioResponse = futureDioException(DioExceptionType.connectionTimeout);
 
         // Act
         final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
@@ -213,22 +261,133 @@ void main() {
         expect(result.fold(id, id), isA<ConnectionTimeout>());
       });
 
-      test(
-          'should return Left<HttpFailure.unableToProcessData> on status code 500 when ValidateStatus callback is not defined',
-          () async {
+      test('should return HttpFailure.sendTimeout on DioExceptionType.sendTimeout', () async {
         // Arrange
-        final dioResponse = Response<List<dynamic>>(
-          data: null,
-          statusCode: 500,
-          requestOptions: requestOptions,
-        );
+        final dioResponse = futureDioException(DioExceptionType.sendTimeout);
 
         // Act
-        final result = await Future.value(dioResponse).fromJsonAsList(UserModel.fromJson);
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
 
         // Assert
         expect(result, isA<Left<HttpFailure, List<UserModel>>>());
-        expect(result.fold(id, id), isA<UnableToProcessData>());
+        expect(result.fold(id, id), isA<SendTimeout>());
+      });
+
+      test('should return HttpFailure.requestCancel on DioExceptionType.cancel', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.cancel);
+
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<RequestCancelled>());
+      });
+
+      test('should return HttpFailure.receiveTimeout on DioExceptionType.receiveTimeout', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.receiveTimeout);
+
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<ReceiveTimeout>());
+      });
+
+      test('should return HttpFailure.receiveTimeout on DioExceptionType.connectionError', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.connectionError);
+
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<ConnectionError>());
+      });
+
+      test('should return HttpFailure.unknown on DioExceptionType.unknown', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.unknown);
+
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<UnknownException>());
+      });
+
+      test('should return Left<HttpFailure.unknown> on DioExceptionType.badResponse with status code null  ', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != null),
+              statusCode: null,
+            ));
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<UnknownException>());
+      });
+
+      test('should return Left<HttpFailure.informationalResponse> on status code 100', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 100),
+              statusCode: 100,
+            ));
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<InformationalResponse>());
+      });
+
+      test('should return Left<HttpFailure.redirectionMessage> on status code 300', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 300),
+              statusCode: 300,
+            ));
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<RedirectionMessage>());
+      });
+      test('should return Left<HttpFailure.clientError> on status code 400', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 400),
+              statusCode: 400,
+            ));
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<ClientError>());
+      });
+
+      test('should return Left<HttpFailure.serverError> on status code 500', () async {
+        // Arrange
+        final dioResponse = futureDioException(DioExceptionType.badResponse,
+            response: Response<Map<String, dynamic>>(
+              requestOptions: RequestOptions(validateStatus: (status) => status != 500),
+              statusCode: 500,
+            ));
+        // Act
+        final result = await dioResponse.fromJsonAsList(UserModel.fromJson);
+        // Assert
+        expect(result, isA<Left<HttpFailure, List<UserModel>>>());
+        expect(result.fold(id, id), isA<ServerError>());
       });
     });
   });
