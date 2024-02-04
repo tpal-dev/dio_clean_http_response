@@ -7,15 +7,9 @@ homepage: https://github.com/tpal-dev/dio_clean_http_response
 topics:
   - dio
   - http
-  - network
-  - middleware
+  - error-handling
   - freezed
-  - union types
-  - sealed class
   - dartz
-  - functional programming
-  - clean architecture
-  - error handling
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
