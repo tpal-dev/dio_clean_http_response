@@ -1,6 +1,6 @@
 name: dio_clean_http_response
 description: "Dio extension for cleaner HTTP response and error/exception handling through functional programming (Either type pattern). Say goodbye to tedious try-catch blocks. All possible exceptions are elegantly covered using [HttpFailure] (Freezed sealed class/union types) with predefined messages. These patterns are well-established, inspired by Reso Coder's TDD/DDD tutorials."
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/tpal-dev/dio_clean_http_response
 homepage: https://github.com/tpal-dev/dio_clean_http_response
 
@@ -10,6 +10,14 @@ topics:
   - error-handling
   - freezed
   - dartz
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
