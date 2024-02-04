@@ -101,7 +101,7 @@ Add the following to your `pubspec.yaml` file:
 ```yaml
 dependencies:
   dio_clean_http_response: ^1.0.0
-  dio: ^4.0.0
+  dio: ^5.4.0
 ```
 
 Then run:
