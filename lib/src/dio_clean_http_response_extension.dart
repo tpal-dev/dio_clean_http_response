@@ -1,4 +1,3 @@
-import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_clean_http_response/dio_clean_http_response.dart';
 import 'package:dio_clean_http_response/src/utils/error_handler.dart';
@@ -86,7 +85,7 @@ extension HttpResponseDioExtension on Future<Response> {
         try {
           return Right(fromJson(response.data));
         } catch (error, stackTrace) {
-          return Left(HttpFailure.unableToProcessData(error, stackTrace));
+          return Left(UnableToProcessData(error, stackTrace));
         }
       },
     );
@@ -171,10 +170,11 @@ extension HttpResponseDioExtension on Future<Response> {
       (response) {
         try {
           final List<dynamic> responseData = response.data;
-          final listResult = responseData.map((item) => fromJson(item)).toList();
+          final listResult =
+              responseData.map((item) => fromJson(item)).toList();
           return Right(listResult);
         } catch (error, stackTrace) {
-          return Left(HttpFailure.unableToProcessData(error, stackTrace));
+          return Left(UnableToProcessData(error, stackTrace));
         }
       },
     );

@@ -24,7 +24,8 @@ class PostModel {
   }
 
   @override
-  String toString() => '🟩\nPOST $id \nuserId: $userId \ntitle: $title \nbody:$body\n';
+  String toString() =>
+      '🟩\nPOST $id \nuserId: $userId \ntitle: $title \nbody:$body\n';
 }
 
 void main() async {
@@ -37,16 +38,18 @@ void main() async {
 
   // On 200 OK returns model
 
-  final postModelOrFailure =
-      await httpClient.get('https://jsonplaceholder.typicode.com/posts/1').fromJson(PostModel.fromJson);
+  final postModelOrFailure = await httpClient
+      .get('https://jsonplaceholder.typicode.com/posts/1')
+      .fromJson(PostModel.fromJson);
 
   postModelOrFailure.fold(
     (failure) => print(failure.message()),
     (postModel) => print(postModel),
   );
 
-  final postModelsListOrFailure =
-      await httpClient.get('https://jsonplaceholder.typicode.com//posts').fromJsonAsList(PostModel.fromJson);
+  final postModelsListOrFailure = await httpClient
+      .get('https://jsonplaceholder.typicode.com//posts')
+      .fromJsonAsList(PostModel.fromJson);
 
   postModelsListOrFailure.fold(
     (failure) => print(failure.message()),
@@ -56,7 +59,9 @@ void main() async {
   // On 400 Status code when [ValidateStatus] is on then returns HttpFailure.clientError
   // [ValidateStatus] defines whether the request is considered to be successful with the given status code. The request will be treated as succeed if the callback returns true.
 
-  final postModelOrFailure400 = await httpClient.get('https://httpstat.us/400').fromJson(PostModel.fromJson);
+  final postModelOrFailure400 = await httpClient
+      .get('https://httpstat.us/400')
+      .fromJson(PostModel.fromJson);
 
   postModelOrFailure400.fold(
     (failure) => print(failure.message()),
@@ -65,7 +70,9 @@ void main() async {
 
   // On 503 Status code when [ValidateStatus] is off status code is ignored and expects data then returns HttpFailure.unableToProcessData
   // [ValidateStatus] defines whether the request is considered to be successful with the given status code. The request will be treated as succeed if the callback returns true.
-  final postModelsListOrFailure400 = await httpClient.get('https://httpstat.us/503').fromJsonAsList(PostModel.fromJson);
+  final postModelsListOrFailure400 = await httpClient
+      .get('https://httpstat.us/503')
+      .fromJsonAsList(PostModel.fromJson);
 
   postModelsListOrFailure400.fold(
     (failure) => print(failure.message()),
