@@ -1,10 +1,8 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:dio_clean_http_response/dio_clean_http_response.dart';
-// ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 
-/// @internal
 /// The `ErrorHandler` class provides utility methods for handling Dio HTTP responses and converting them
 /// into [HttpFailure] or [Response] types.
 @internal
@@ -23,8 +21,7 @@ class ErrorHandler {
   ///   (response) => print('HTTP Response: $response'),
   /// );
   /// ```
-  static Future<Either<HttpFailure, Response>> dioHttpResponse(
-      Future<Response> dioHttpResponse) async {
+  static Future<Either<HttpFailure, Response>> dioHttpResponse(Future<Response> dioHttpResponse) async {
     try {
       return Right(await dioHttpResponse);
     } on SocketException catch (error, stackTrace) {
@@ -37,8 +34,7 @@ class ErrorHandler {
   }
 
   /// Handles a [DioException] and maps it to a specific [HttpFailure] instance based on the exception type.
-  static HttpFailure _handleDioException(
-      DioException error, StackTrace stackTrace) {
+  static HttpFailure _handleDioException(DioException error, StackTrace stackTrace) {
     switch (error.type) {
       case DioExceptionType.connectionTimeout:
         return ConnectionTimeout(error, stackTrace);
@@ -62,8 +58,7 @@ class ErrorHandler {
   }
 
   /// Handles a [DioExceptionType.badResponse] and maps it to a specific [HttpFailure] instance based on the HTTP status code.
-  static HttpFailure _handleBadResponseException(
-      DioException error, StackTrace stackTrace) {
+  static HttpFailure _handleBadResponseException(DioException error, StackTrace stackTrace) {
     final statusCode = error.response?.statusCode;
     if (statusCode == null) {
       return UnknownException(error, stackTrace);
