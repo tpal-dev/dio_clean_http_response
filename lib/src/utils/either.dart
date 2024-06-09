@@ -99,10 +99,10 @@ sealed class Either<L, R> {
       test ? Right(rightValue()) : Left(leftValue());
 
   @override
-  bool operator ==(Object obj) {
+  bool operator ==(Object other) {
     return this.fold(
-      (left) => obj is Left && left == obj.value,
-      (right) => obj is Right && right == obj.value,
+      (left) => other is Left && left == other.value,
+      (right) => other is Right && right == other.value,
     );
   }
 

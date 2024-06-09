@@ -43,9 +43,10 @@ sealed class HttpFailure {
         const HttpFailuresLocalizationDefaultImpl(),
   }) {
     // If showLog is true, log the localized error message along with additional information.
-    if (showLog)
+    if (showLog) {
       log(message(localization: localization),
           error: error, stackTrace: stackTrace);
+    }
 
     // Map different HTTP failure scenarios to their corresponding localized error messages.
     return switch (this) {
