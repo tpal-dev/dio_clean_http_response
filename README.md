@@ -21,7 +21,7 @@
 
 Developing applications that interact with APIs often involves handling HTTP responses, including potential errors and data parsing. The Dio Clean HTTP Response package aims to simplify and streamline this process by providing an extension on `Future<Response>`.
 
-The motivation behind this package is to offer a clean and consistent way to convert Dio HTTP responses into either successful model instances or comprehensive error handling using Dartz for Either monads as `Future<Either<HttpFailure, TModel>>` (`TModel` - generic type)
+The motivation behind this package is to offer a clean and consistent way to convert Dio HTTP responses into either successful model instances or comprehensive error handling using HttpFailure sealed class and function programming pattern (Either type pattern) for Either monads as `Future<Either<HttpFailure, TModel>>` (`TModel` - generic type)
 
 Key Goals
 
@@ -33,7 +33,7 @@ Key Goals
 
 - **Clean API Integration:** Seamlessly integrate clean HTTP response handling into your Dio requests, making error management more robust and maintainable. (`Either` type pattern)
 
-- **Structured Error Handling:** Easily manage Dio Exceptions using a set of 'Freezed' union types of `HttpFailure` sealed class, each representing a specific HTTP failure scenario.
+- **Structured Error Handling:** Easily manage Dio Exceptions using a set of subtypes of `HttpFailure` sealed class, each representing a specific HTTP failure scenario.
 
 - **Localization Support:** Customize error messages for different scenarios with the ability to provide your own localization implementation.
 
@@ -100,7 +100,7 @@ Add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  dio_clean_http_response: ^1.0.0
+  dio_clean_http_response: ^2.0.0
   dio: ^5.4.0
 ```
 
@@ -112,11 +112,11 @@ pub get
 
 ## Either Type
 
-Functional Error Handling `Either` is an alternative to Nullable value and Exceptions. More info about either https://pub.dev/packages/either_dart
+Functional Error Handling `Either` is an alternative to Nullable value and Exceptions. More info about either https://pub.dev/packages/either_dart | https://pub.dev/packages/either_dart
 
-## HttpFailure Class
+## HttpFailure Sealed class
 
-The `HttpFailure` class represents a set of 'Freezed' union types covering all Dio Exceptions. It includes factory constructors for different HTTP failure scenarios, each associated with a specific type. More info about union types and sealed classes https://pub.dev/packages/freezed#union-types-and-sealed-classes
+The `HttpFailure` sealed class represents a set of subtypes covering all Dio Exceptions for different HTTP failure scenarios. More info about sealed class https://dart.dev/language/class-modifiers#sealed
 
 ## HttpFailuresLocalization Class
 

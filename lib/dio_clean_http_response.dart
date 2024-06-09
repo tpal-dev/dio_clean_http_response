@@ -12,3 +12,4 @@ export 'src/dio_clean_http_response_extension.dart';
 export 'src/utils/http_failure.dart';
 export 'src/utils/http_failures_localization/http_failures_localization.dart';
 export 'src/utils/http_failures_localization/http_failures_localization_default_impl.dart';
+export 'src/utils/either.dart';
